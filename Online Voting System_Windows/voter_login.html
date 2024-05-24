@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Login</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-image: url('https://vishnuias.com/wp-content/uploads/2022/07/Simultaneous-Elections.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .container {
+            max-width: 500px;
+            margin: auto;
+            padding-top: 50px;
+            margin-left: 350px; /* Adjust the left margin */
+            border-radius: 10px;
+        }
+        .card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+        .card-header {
+            Background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            border-radius: 10px 10px 0 0;
+        }
+        .card-body {
+            padding: 30px;
+        }
+        .form-group label {
+            font-weight: bold;
+        }
+        .btn-login {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+        }
+        .btn-login:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <h3>Voter LOGIN</h3>
+        </div>
+        <div class="card-body">
+            <form action="voter_login_page.php" method="POST">
+                <div class="form-group">
+                    <label for="aadhar">Aadhar Card Number:</label>
+                    <input type="text" class="form-control" id="aadhar" name="aadhar" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" class="form-control" id="password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" class="form-control" id="dob" name="dob" required>
+                </div>
+                <button type="submit" class="btn btn-login btn-block">Login</button>
+            </form>
+            <p class="text-center mt-3">Don't have an account? <a href="registration_page.php">Register</a></p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
